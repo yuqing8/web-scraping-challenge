@@ -45,7 +45,7 @@ def scrape_info( ):
 
 
     partial_url=soup_jpg.find('img',class_='headerimage')['src']
-    featured_image_url=jpg_url+"/"+partial_url
+    featured_image_url=jpg_url+partial_url
 
 
 
@@ -116,7 +116,7 @@ def scrape_info( ):
         try:
             
             title = h.img['alt']
-            hemi_url = "https://marshemispheres.com/" + "/" + h.img['src']
+            hemi_url = "https://marshemispheres.com/" + h.img['src']
             h_dict = {}
             h_dict['title'] = title
             h_dict['img_url'] = hemi_url
