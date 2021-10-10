@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+  
+  <div class="row">
+    <div class="col-md-12"></div>
+      <h2>Latest Mars New:</h2>
+      <h3>{{mars.news_title}}</h3>
+      <p>{{mars.news_para}}</p>
+    </div>
+
+    <img src="{{ mars.feature_img }}" alt="marsfeature">
+    
+
+    <div class="card border-0">
+      <h3 class="text-sm-left"> Mars Facts</h3>
+      <p> {{mars.table|safe}} </p>
+    </div>
+
+
+    <hr>
+      <div class="row">
+        <div class="col-md-8 offset-4">
+          <h2 class="align-items-center">Mars Hemispheres</h2>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        
+        <div class="col-md-3">
+        </br>
+            <div class="align-items-center border">
+              <img width="200 px" height="200 px" src="{{mars.hemi1_img }}">
+            </div>
+            <div>
+              <h5> {{mars.hemi1_title }} </h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+        </br>
+            <div class="align-items-center border">
+              <img width="200 px" height="200 px" src="{{mars.hemi2_img }}">
+            </div>
+            <div>
+              <h5> {{mars.hemi2_title }} </h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+          </br>
+            <div class="align-items-center border">
+              <img width="200 px" height="200 px" src="{{mars.hemi3_img }}">
+            </div>
+            <div>
+              <h5> {{mars.hemi3_title }} </h5>
+            </div>
+          </div>
+
+        <div class="col-md-3">
+          </br>
+            <div class="align-items-center border">
+              <img width="200 px" height="200 px" src="{{mars.hemi4_img }}">
+            </div>
+
+            <div>
+              <h5> {{mars.hemi4_title }} </h5>
+            </div>
+
+        </div>
+        
+      </div>
+    <hr>
+
+    <!-- <h3>{{ mars.hemi1_title }}</h3>
+    <img src="{{ mars.hemi1_img }}" alt="mars_hemi1">
+    <h3>{{ mars.hemi2_title }}</h3>
+    <img src="{{ mars.hemi2_img }}" alt="mars_hemi2">
+    <h3>{{ mars.hemi3_title }}</h3>
+    <img src="{{ mars.hemi3_img }}" alt="mars_hemi3">
+    <h3>{{ mars.hemi4_title }}</h3>
+    <img src="{{ mars.hemi4_img }}" alt="mars_hemi4">
+  </div>
+  </div> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
