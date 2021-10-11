@@ -127,7 +127,7 @@ def scrape_info( ):
     mars={"news_title":result_title,
              "news_para":result_para,
              "feature_img":featured_image_url,
-             #"table":table_mars,#
+             "table":table_mars,
              "hemi1_title":hemisphere_image_urls[0]['title'],
              "hemi1_img":hemisphere_image_urls[0]['img_url'],
              "hemi2_title":hemisphere_image_urls[1]['title'],
